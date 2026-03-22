@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../admin.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <a href="/index.html" class="logo"><span>Bee</span>Cycle</a>
+        <nav>
+          <ul>
+            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="manage-users.html">Manage Users</a></li>
+            <li><a href="manage-listings.html">Manage Listings</a></li>
+          </ul>
+        </nav>
+        <div class="buttons">
+          <div class="avatar">NS</div>
+          <button class="btn" href="auth/registration.html">Exit Admin</>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="overview">
+          <header>
+            <h1>System Overview</h1>
+            <p>
+              Welcome back. Here is the current status of the BeeCycle platform.
+            </p>
+          </header>
+          <div class="cards">
+            <div class="users">
+              <div>
+                <p>Total Registered Users</p>
+                <span>1,248</span>
+              </div>
+              <img src="../assets/icons/users.svg" />
+            </div>
+            <div class="listings">
+              <div>
+                <p>Total Active Listings</p>
+                <span>853</span>
+              </div>
+              <img src="../assets/icons/box.svg" />
+            </div>
+          </div>
+        </section>
+        <section class="tools">
+          <header>
+            <h1>Moderation Tools</h1>
+          </header>
+          <div>
+            <a href="manage-users.html" class="card">
+              <p>Review &amp; Manage Users</p>
+              <img src="../assets/icons/right.svg" alt="arrow" />
+            </a>
+            <a href="manage-listings.html" class="card">
+              <p>Review &amp; Remove Listings</p>
+              <img src="../assets/icons/right.svg" alt="arrow" />
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p class="copyright">
+          &copy; 2026 BeeCycle Marketplace. All rights reserved.
+        </p>
+        <p>Admin Panel v1.0</p>
+      </div>
+    </footer>
+  </body>
+</html>

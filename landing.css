@@ -1,0 +1,255 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding-block: 100px;
+  background: var(--bg-main);
+  background-image: url("./assets/HeroBG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+  }
+
+  .left {
+    h1 {
+      color: var(--text-heading);
+      font-size: 4rem;
+      line-height: 1.06;
+      margin-bottom: 12px;
+      font-weight: bold;
+    }
+
+    p {
+      max-width: 500px;
+      text-wrap: pretty;
+      font-size: 1.125rem;
+      line-height: 1.1;
+      font-weight: 400;
+      margin-bottom: 32px;
+    }
+
+    button {
+      padding: 1rem 2rem;
+      font-size: 0.875rem;
+    }
+
+    .desc {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 8px;
+
+      small {
+        color: var(--text-muted);
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.trust {
+  background: var(--brand-tertiary);
+  color: #fff;
+  padding: 2rem 0;
+
+  .container {
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-weight: 400;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+
+      img {
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.benefits {
+  position: relative;
+  padding: 120px 0;
+  background-color: var(--bg-main);
+  background-image: url("./assets/Dotted.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      max-width: 320px;
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-default);
+      border-radius: 1rem;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(30 58 138 / 7%);
+
+      .icon {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 12px;
+
+        img {
+          width: 120px;
+          height: 120px;
+          object-fit: contain;
+        }
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        text-wrap: pretty;
+
+        h3 {
+          color: var(--text-heading);
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+}
+
+.categories {
+  position: relative;
+  padding: 120px 0;
+  background-image: url("./assets/CategoryBG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--bg-surface);
+  overflow: hidden;
+
+  .section-title h2 span {
+    color: var(--brand-secondary);
+  }
+
+  .category-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    .category {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      min-height: 250px;
+      border: 1px solid var(--border-default);
+      box-shadow: 0 2px 8px rgba(30 58 138 / 7%);
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .label {
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+
+        .tag {
+          border-radius: 999px;
+          background-color: #fff;
+          color: var(--text-heading);
+          font-size: 0.75rem;
+          font-weight: 400;
+          padding: 6px 12px;
+          line-height: 1;
+        }
+
+        h3 {
+          font-size: 1.25rem;
+          letter-spacing: 5%;
+          font-weight: 500;
+          line-height: 1.05;
+        }
+      }
+    }
+  }
+}
+
+.cta {
+  padding: 120px 0;
+  background-color: var(--bg-main);
+  background-image: url("./assets/Dotted.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .box {
+    margin: 0 auto;
+    width: 1000px;
+    position: relative;
+    border-radius: 1.5rem;
+    background-color: var(--brand-primary);
+    color: var(--bg-surface);
+    display: flex;
+    padding: 64px 40px;
+
+    h3 {
+      font-size: 2.25rem;
+      line-height: 1.1;
+      margin-bottom: 8px;
+    }
+
+    p {
+      opacity: 0.7;
+      margin-bottom: 24px;
+    }
+
+    button {
+      padding: 16px 32px;
+      font-weight: 600;
+      font-size: 18px;
+
+      a {
+        text-decoration: none;
+        color: var(--text-heading);
+      }
+    }
+
+    img {
+      position: absolute;
+      right: 2rem;
+      bottom: 0;
+      width: 350px;
+    }
+  }
+}
+
+footer {
+  padding: 40px 0 24px;
+}
