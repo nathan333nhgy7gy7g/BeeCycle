@@ -1,0 +1,17 @@
+
+
+.filters{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-container{
+    display: grid;
+    flex-direction: column;
+    height: 200px;
+    width: fit-content;
+    background-color: black;
+}
