@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../marketplace.css" />
     <link rel="stylesheet" href="homepage.css">
   </head>
-  <xbody>
+  <body>
     <header class="navbar">
       <div class="container">
         <a href="#" class="logo"><span>Bee</span>Cycle</a>
@@ -32,37 +32,44 @@
     </header>
 
     <main>
-      <div class="container">
+      <div class="list-container">
         <section class="filter-container">
           <div class="filters">
-            <h1>filters</h1> <span class="gray">Clear all</span>
+            <h1>Filters</h1> <span class="gray">Clear all</span>
           </div>
           <article class="campus">
             <h2>Campus</h2>
-            <p>Binus@Kemanggisan</p>
-            <p>Binus@Alam Sutera</p>
-            <p>Binus@Bekasi</p>
-            <p>Binus@Malang</p>
-            <p>Binus@Semarang</p>
-            <p>Binus@Bandung</p>
+            <label><input type="checkbox" name="campuses" id="kmg">Binus@Kemanggisan</label>
+            <label><input type="checkbox" name="campuses" id="alsut">Binus@Bekasi</label>
+            <label><input type="checkbox" name="campuses" id="bks">Binus@Malang</label>
+            <label><input type="checkbox" name="campuses" id="mal">Binus@Semarang</label>
+            <label><input type="checkbox" name="campuses" id="sem">Binus@Bandung</label>
+            <label><input type="checkbox" name="campuses" id="ban">Binus@Alam Sutera</label>
           </article>
 
           <article class="categories">
             <h2>Categories</h2>
-            <p>Textbooks</p>
-            <p>Electronics  </p>
-
+            <label><input type="radio" name="categories" id="text">Textbook</label>
+            <label><input type="radio" name="categories" id="elec">Electronics</label>
+            <label><input type="radio" name="categories" id="dorm">Dorm Essentials</label>
+            <label><input type="radio" name="categories" id="unif">Uniforms</label>
+            <label><input type="radio" name="categories" id="arts">Art Supplies</label>
           </article>
 
+          <button type="button">Apply</button>
+        </section>
 
-
-          <div class="categories">
-
+        <section class="listings">
+          <div class="grid-container">
+            <nav>
+                <h2>Fresh Listings</h2>
+                <select name="sort" id="Newest">
+                  <option value="new">Sort By: Newest First</option>
+                </select>
+            </nav>
           </div>
         </section>
 
-
-        <div class="listings">
 
         </div>
       </div>
