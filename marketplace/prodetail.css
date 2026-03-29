@@ -91,7 +91,20 @@ contact{
   }
 
   #heart{
+    padding: 10px;
+    border-radius: 6px;
+    align-items: center;
+    background-color: white;
+    i{
+      color: black;
+    }
     
+  }
+
+  #heart:active{
+    i{
+      color: rgb(255,0,180);
+    }
   }
 }
 
