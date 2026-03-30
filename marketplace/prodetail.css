@@ -95,6 +95,7 @@ contact{
     border-radius: 6px;
     align-items: center;
     background-color: white;
+    border: 1px solid black;
     i{
       color: black;
     }
